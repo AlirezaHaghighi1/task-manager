@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary-color: rgb(33, 51, 87);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+label,
+select,
+button {
+  font: inherit;
+}
+
+.container {
+  display: flex;
+  box-shadow: 0 15px 20px 3px rgb(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 800px;
+  height: auto;
+  background-color: #fff;
+}
+
+.wellcome-section {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.wellcome-section h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.wellcome-section p {
+  margin: 0;
+  color: #ddd;
+}
+
+.login-section {
+  padding: 30px;
+  flex: 1;
+  width: calc(50%);
+}
+
+.login-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.7em;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 0.9em;
+}
+
+.input-group input[type="text"] {
+  margin-top: -6px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  box-shadow: 0 3px 8px rgb(0, 0, 0, 0.1);
+}
+
+.input-group input[type="checkbox"] {
+  appearance: none;
+}
+
+/* Customize the label (the container) */
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.remember-me:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.remember-me input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.remember-me label {
+  cursor: pointer;
+}
+
+.remember-me label:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: rgb(67, 67, 161);
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(67, 67, 161);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 5px 20px;
+  height: auto;
+  width: fit-content;
+  background-color: #fff;
+  color: #888;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 6px 12px;
+
+  box-shadow: none;
+  width: 100%;
+}
+
+.form-subtext {
+  color: #888;
+}
